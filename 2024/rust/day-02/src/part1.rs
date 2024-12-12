@@ -55,7 +55,7 @@ pub fn process(input: &str) -> miette::Result<String> {
         })
         .count();
 
-    Ok(dbg!(save_count).to_string())
+    Ok(save_count.to_string())
 }
 
 #[cfg(test)]

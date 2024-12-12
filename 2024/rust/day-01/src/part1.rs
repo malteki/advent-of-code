@@ -17,12 +17,12 @@ pub fn process(input: &str) -> miette::Result<String> {
         .into_iter()
         .zip(right)
         .map(|(a, b)| {
-            let dif = dbg!((a - b).abs());
+            let dif = (a - b).abs();
             dif
         })
         .sum();
 
-    Ok(dbg!(result).to_string())
+    Ok(result.to_string())
 }
 
 #[cfg(test)]

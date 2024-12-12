@@ -19,7 +19,7 @@ pub fn process(input: &str) -> miette::Result<String> {
         .map(|value| value * (*right_counts.get(&value).unwrap_or(&0) as u128))
         .sum();
 
-    Ok(dbg!(similarity_score).to_string())
+    Ok(similarity_score.to_string())
 }
 
 #[cfg(test)]
